@@ -1,3 +1,17 @@
+//01- clock logic 
+const clock = document.getElementById('clock')
+const dt = document.getElementById('dt')
+setInterval(function () {
+  let clk  = new Date();
+  clock.innerHTML=clk.toLocaleTimeString()
+},1000)
+
+setInterval(function(){
+  let dtr = new Date();
+  dt.innerHTML = dtr.toDateString()
+},1000)
+
+
 //genrate the random color
 const randomcolor=function(){
     const hex ="0123456789ABCDEF"
